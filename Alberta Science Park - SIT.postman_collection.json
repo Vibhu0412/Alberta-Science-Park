@@ -1,0 +1,810 @@
+{
+	"info": {
+		"_postman_id": "e9a27460-0ded-401e-ba10-05cc3da4112f",
+		"name": "Alberta Science Park - SIT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21689200"
+	},
+	"item": [
+		{
+			"name": "Challenge Statement",
+			"item": [
+				{
+					"name": "Create Challenge Statement",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODYwNDg2LCJpYXQiOjE2NTg4NTkyODYsImp0aSI6ImVlMmYyYmFlZDVmYjQ2MDliOTczYTBmZjkxYTNhYzFiIiwidXNlcl9pZCI6MTV9.FPDO4ah850SlTDsG_9Akf8nL-hQWp-bIY30iFGjhMhM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\" : 15,\n    \"challenge_title\" : \"Test 22 is Testing Tittle\",\n    \"challenge_description\" : \"TEst 22 The dummy desciption of Postman Testing Tittle\",\n    \"challenge_location\" : \"Hong Kong\",\n    \"industry\" : [1,4]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/challenge/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"challenge",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Challenge Statement",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODYyMDQxLCJpYXQiOjE2NTg4NjA4NDEsImp0aSI6IjVmNDhlM2M5NjZlNTQzZTVhYjliZGI3ODY2MzIwNDliIiwidXNlcl9pZCI6Mn0.f8PNbVGqjoTCNcrVOc_NaQGLghulve4IMuCbCr3v4LM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/challenge/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"challenge",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Challenge Statement",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODYyMDQxLCJpYXQiOjE2NTg4NjA4NDEsImp0aSI6IjVmNDhlM2M5NjZlNTQzZTVhYjliZGI3ODY2MzIwNDliIiwidXNlcl9pZCI6Mn0.f8PNbVGqjoTCNcrVOc_NaQGLghulve4IMuCbCr3v4LM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/challenge/17",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"challenge",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Challenge Statement",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODYyMDQxLCJpYXQiOjE2NTg4NjA4NDEsImp0aSI6IjVmNDhlM2M5NjZlNTQzZTVhYjliZGI3ODY2MzIwNDliIiwidXNlcl9pZCI6Mn0.f8PNbVGqjoTCNcrVOc_NaQGLghulve4IMuCbCr3v4LM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\" : 15,\n    \"challenge_title\" : \"Permissions haha Updated President Testing Tittle\",\n    \"challenge_description\" : \"HAHA Updated The dummy desciption of Postman Testing Tittle\",\n    \"challenge_location\" : \"Hong Kong\",\n    \"industry\" : [1,4],\n    \"status\": \"Completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/challenge/17/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"challenge",
+								"17",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Solution Seeker",
+			"item": [
+				{
+					"name": "Solution-Profile",
+					"item": [
+						{
+							"name": "Create Solution Profile",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4OTU0NTk4LCJpYXQiOjE2NTg5NTMzOTgsImp0aSI6ImNlM2ZmZjY0NDk4NDQzZDlhYjQ1NTIwODE4YTI2MGUwIiwidXNlcl9pZCI6MTN9.S2PA_4HA6tMx5Z66OG35nYNgPn7eyNi7f9lA4bX_3Eg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"solution_user_title\" : \" AI ML Python Provider\",\n    \"solution_user_description\" : \"Testing I am a python developer of Postman Testing Tittle\",\n    \"skills\" : \"Haha, Python, Hahah, Julian\",\n    \"experience_level\" : \"INTERMEDIATE\",\n    \"awards\" : \"Shanti, Scholarship\",\n    \"employment_history\" : \"INTERMEDIATE\",\n    \"lab_software\" : \"VSCODE, Pycharm\",\n    \"lab_hardware\" : \"Funnel, TestTube\",\n    \"languages_spoken\" : \"English, French\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/solution-profile/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"solution-profile",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Solution Profile",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4OTU0NTk4LCJpYXQiOjE2NTg5NTMzOTgsImp0aSI6ImNlM2ZmZjY0NDk4NDQzZDlhYjQ1NTIwODE4YTI2MGUwIiwidXNlcl9pZCI6MTN9.S2PA_4HA6tMx5Z66OG35nYNgPn7eyNi7f9lA4bX_3Eg",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/solution-profile/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"solution-profile",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retrieve Solution Profile",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4OTU1MTUzLCJpYXQiOjE2NTg5NTM5NTMsImp0aSI6Ijk0ZTBmYWE0NDk2NTQxY2M4OGVhNDhkZGMxOTgzYjNhIiwidXNlcl9pZCI6MTN9.Lm1fnMsBebnZAU89zzf2CRwF8X9FlYfwVG1xhXPDo3g",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/solution-profile/13/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"solution-profile",
+										"13",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Solution Profile",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4OTU1MTUzLCJpYXQiOjE2NTg5NTM5NTMsImp0aSI6Ijk0ZTBmYWE0NDk2NTQxY2M4OGVhNDhkZGMxOTgzYjNhIiwidXNlcl9pZCI6MTN9.Lm1fnMsBebnZAU89zzf2CRwF8X9FlYfwVG1xhXPDo3g",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"user\" : 13,\n    \"solution_user_title\" : \"updated Changed Python Provider\",\n    \"solution_user_description\" : \"Testing I am a python developer of Postman Testing Tittle\",\n    \"skills\" : \"Haha, Python, Hahah, Julian\",\n    \"experience_level\" : \"INTERMEDIATE\",\n    \"awards\" : \"NONO, Scholarship\",\n    \"employment_history\" : \"INTERMEDIATE\",\n    \"lab_software\" : \"VSCODE, Pycharm\",\n    \"lab_hardware\" : \"Funnel, TestTube\",\n    \"languages_spoken\" : \"English, French\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/solution-profile/13/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"solution-profile",
+										"13",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test23@gmail.com\",\n    \"role\": [3],\n    \"password\": \"Abc@123456\",\n    \"password2\": \"Abc@123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/register/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test13@gmail.com\",\n    \"password\": \"Abc@123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change User Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU3Nzg2MzE4LCJpYXQiOjE2NTc3ODUxMTgsImp0aSI6IjM5Y2IyODFmMjBmNDQ5OGQ4YzUzZWZmZTQ5MDI2OTNmIiwidXNlcl9pZCI6Mn0.VFTeFOUfvGOkvB__dAFQPE5g0moj7NECx_7-wEBiFbE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\" : \"Abc@123456\",\n    \"password2\" : \"Abc@12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/changepassword/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"changepassword",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Password Reset Email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"vbpurohit1948@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/send-reset-password-email/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"send-reset-password-email",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset User Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "Send password reset email then enter url here in format ../<uid>/<token>",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\": \"abc123\",\n    \"password2\": \"abc123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/reset-password/Nw/b8gnw2-9a47e31d47a0c9e3020009f0c7b4f4f5/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"reset-password",
+						"Nw",
+						"b8gnw2-9a47e31d47a0c9e3020009f0c7b4f4f5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Personal Profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODUyNDUzLCJpYXQiOjE2NTg4NTEyNTMsImp0aSI6ImFiMDIyNmY5YTYxNjQ5Yjk5N2E3N2M5YmViN2JmNmEzIiwidXNlcl9pZCI6MTZ9.07ZywfJ4NZlS7i5MP-Pd7MHr2haO4IGNlLPVFUwIGp8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\":\"Test23\",\n    \"last_name\":\"Donna\",\n    \"personal_email\": \"test24@gmail.com\",\n    \"office_phone\":\"9997836452\",\n    \"education\":\"BCE MSU University\",\n    \"position\":\"AI/Ml Developer\",\n    \"languages_spoken\": \"Hindi, English\",\n    \"experience_level\": \"Expert\",\n    \"address_line_1\": \"5/4 Baker Street\",\n    \"address_line_2\": \"North Dakota\",\n    \"city\": \"Dakota\",\n    \"state\": \"Thames\",\n    \"country\": \"Uganda\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/create/personal-profile/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"create",
+						"personal-profile",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retreive Personal Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODUzNzIxLCJpYXQiOjE2NTg4NTI1MjEsImp0aSI6IjRiODlmNzllYmZhNTRkNjJiZmU4Mzk5N2NmYzU2ZDNmIiwidXNlcl9pZCI6MTZ9.dcONa_BGS1sJ52KoA5Bi1IZCYZeuT0VMX6XZt07YqdY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/user/create/personal-profile/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"create",
+						"personal-profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Personal Profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODUyNDUzLCJpYXQiOjE2NTg4NTEyNTMsImp0aSI6ImFiMDIyNmY5YTYxNjQ5Yjk5N2E3N2M5YmViN2JmNmEzIiwidXNlcl9pZCI6MTZ9.07ZywfJ4NZlS7i5MP-Pd7MHr2haO4IGNlLPVFUwIGp8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\":\"Vaibhav\",\n    \"last_name\":\"Purohit\",\n    \"personal_email\": \"agent007@gmail.com\",\n    \"office_phone\":\"9997836452\",\n    \"education\":\"BCE Nirma University\",\n    \"position\":\"Django Developer\",\n    \"languages_spoken\": \"Hindi, English\",\n    \"experience_level\": \"Expert\",\n    \"address_line_1\": \"5/4 Baker Street\",\n    \"address_line_2\": \"North Dakota\",\n    \"city\": \"Dakota\",\n    \"state\": \"Thames\",\n    \"country\": \"Uganda\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/update/personal-profile/16/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"update",
+						"personal-profile",
+						"16",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Business Profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODUzNzIxLCJpYXQiOjE2NTg4NTI1MjEsImp0aSI6IjRiODlmNzllYmZhNTRkNjJiZmU4Mzk5N2NmYzU2ZDNmIiwidXNlcl9pZCI6MTZ9.dcONa_BGS1sJ52KoA5Bi1IZCYZeuT0VMX6XZt07YqdY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"company_name\":\"VS Industries\",\n    \"company_email\":\"alberta1@dev.com\",\n    \"company_phone\":\"9983479374\",\n    \"company_address_line_1\":\"28/11 Baker Street\",\n    \"company_address_line_2\":\"John Lane Avenue\",\n    \"company_classification\": \"S23\",\n    \"company_city\": \"Ahmedabad\",\n    \"company_state\": \"Gujarat\",\n    \"company_country\": \"India\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/create/business-profile/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"create",
+						"business-profile",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Business Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODU1MDI5LCJpYXQiOjE2NTg4NTM4MjksImp0aSI6IjgxYWYzYzI2YzY0OTQxNDVhNjAyZjlhYmE5MzQwMGY4IiwidXNlcl9pZCI6MTZ9.BYQF2RSkc0VmZZ-GT6tB0yOvKvryy98DpTRggZnrYjE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/user/create/business-profile/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"create",
+						"business-profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Business Profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODU1MDI5LCJpYXQiOjE2NTg4NTM4MjksImp0aSI6IjgxYWYzYzI2YzY0OTQxNDVhNjAyZjlhYmE5MzQwMGY4IiwidXNlcl9pZCI6MTZ9.BYQF2RSkc0VmZZ-GT6tB0yOvKvryy98DpTRggZnrYjE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"company_name\":\"Test Industries\",\n    // \"company_email\":\"alberta@dev.com\",\n    // \"company_phone\":\"9983479374\",\n    // \"company_address_line_1\":\"28/11 Baker Street\",\n    // \"company_address_line_2\":\"John Lane Avenue\",\n    // \"company_classification\": \"S23\",\n    // \"company_city\": \"Ahmedabad\",\n    // \"company_state\": \"Gujarat\",\n    \"company_country\": \"Norway\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/update/business-profile/16/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"update",
+						"business-profile",
+						"16",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upgrade ROLE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU4ODU1OTA0LCJpYXQiOjE2NTg4NTQ3MDQsImp0aSI6ImM4NTE0OTVkYjQyYzRhYWM5ZGI4MWRjM2JkODE4ZmI2IiwidXNlcl9pZCI6OX0.lBjxtqofyaIFkLBWxTEpg-9oditK0FSIX1VrP-_aIDE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"role\" : [3]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/upgrade-role/9/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"upgrade-role",
+						"9",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
